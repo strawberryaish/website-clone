@@ -1,0 +1,21 @@
+////////////////////////////////
+/// TEXTS
+.primary-title {
+    font-family: Waruna, sans-serif;
+    font-size: var(--font-xxl-1);
+    font-weight: 500;
+    background-image: var(--bg-img-2);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.primary-content {
+    font-size: var(--font-md-3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    width: 80%;
+    font-weight: 600;
+    color: var(--white);
+}
