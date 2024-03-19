@@ -110,6 +110,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 13rem;
+  margin-bottom: 4rem;
 }
 .starter .main-header-logo {
   width: var(--font-xxl-2);
@@ -117,31 +119,72 @@ body {
 
 .nav {
   width: 80%;
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  padding: 1rem;
+  align-items: center;
   gap: 2.5rem;
+}
+.nav, .nav-list, .nav-link, .nav li {
+  height: 100%;
 }
 .nav-list {
   letter-spacing: 1px;
   display: flex;
+  align-items: center;
   font-size: var(--font-default-2);
-  padding: 1.5rem;
   gap: 2.5rem;
   list-style: none;
   text-transform: uppercase;
 }
 .nav-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.nav-link:link, .nav-link:visited {
   color: var(--white);
 }
 .nav-link-active {
+  color: var(--orange) !important;
+  font-weight: 700;
+}
+.nav-link:hover {
   color: var(--orange);
 }
 .nav-icon {
   font-size: var(--font-sm-2);
+}
+.nav .menu {
+  position: relative;
+}
+.nav .menu-sub {
+  list-style: none;
+  position: absolute;
+  top: 8rem;
+  left: -5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  padding: 2.5rem;
+}
+.nav .menu-sub :link, .nav .menu-sub :visited {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.3s;
+}
+.nav .menu-sub :link:hover, .nav .menu-sub :visited:hover {
+  color: var(--orange);
+}
+.nav .menu li {
+  padding-bottom: 0.5rem;
+}
+.nav .menu:hover .menu-sub {
+  opacity: 1;
+  visibility: visible;
+}
+.nav .menu:hover .nav-link {
+  color: var(--orange);
 }
 
 .button-container {

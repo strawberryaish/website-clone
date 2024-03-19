@@ -51,7 +51,8 @@ padding: 0 1rem;
 display: flex;
 align-items: center;
 justify-content:space-evenly;
-
+height: 13rem;
+margin-bottom: 4rem;
 
     &-logo {
         width: var(--font-xxl-2);
@@ -60,40 +61,108 @@ justify-content:space-evenly;
     
 }
 
+
+
 }
 
 .nav
 {
     width: 80%;
-    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    padding: 1rem;
+    align-items: center;
     gap: 2.5rem;
+   
+    &, &-list, &-link, li {
+       
+        height: 100%;
+    }
     
     &-list {
+  
     letter-spacing: 1px;
     display: flex;
+    align-items: center;
+
+
     font-size: var(--font-default-2);
-    padding: 1.5rem;
+    
     gap: 2.5rem;
     list-style: none;
     text-transform: uppercase;
+
     }
 
+    
     &-link {
+        display: flex;
+        align-items: center;
         text-decoration: none;
+        transition: all .3s;
+        &:link, &:visited {
         color: var(--white);
+     
+
+        }
 
         &-active {
+            color: var(--orange)!important;
+            font-weight: 700;
+        }
+
+        &:hover {
             color: var(--orange);
         }
+      
+
+
     }
 
     &-icon {
         font-size: var(--font-sm-2);
     }
+
+    .menu {
+    position: relative;
+
+
+    
+    &-sub {
+        list-style: none;
+        position: absolute;
+        top: 8rem;
+        left: -5rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+        padding: 2.5rem;
+
+        :link, :visited {
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.3s;
+
+            &:hover {
+                color: var(--orange);
+            }
+        }
+
+    }
+
+    li {
+        padding-bottom: 0.5rem;
+    }
+
+    &:hover .menu-sub {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover .nav-link {
+        color: var(--orange);
+    }
+
+}
 }
 
 .button-container {
