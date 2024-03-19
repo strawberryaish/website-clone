@@ -7,6 +7,10 @@
     background-image: var(--bg-img-2);
     background-clip: text;
     color: transparent;
+
+    &-address {
+        font-size: var(--font-md-2)!important;
+    }
     
 }
 
@@ -18,4 +22,12 @@
     width: 80%;
     font-weight: 600;
     color: var(--white);
+
+    &-address {
+        font-size: var(--font-md-2)!important;
+        text-transform: capitalize!important;
+        width: 100%;
+        font-weight: 500;
+    }
 }
+

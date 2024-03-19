@@ -43,10 +43,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 :root {
     //*COLORS
     --primary-color: #FAC349;
@@ -76,9 +72,16 @@ html {
 
 }
 
+html {
+    font-size: 62.5%;
+}
+
+
+
 body {
     font-family: Poppins, sans-serif;
     font-weight: 500;
+    background-color: #131313;
 }
 
 @import "header";
