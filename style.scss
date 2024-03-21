@@ -50,6 +50,7 @@
     --orange: #ef9700;
     --white: #fff;
     --black: #1d1d1d;
+    --black-2: #131313;
 
     //*FONT SIZES
     --font-xxl-1: 17rem;
@@ -81,11 +82,11 @@ html {
 body {
     font-family: Poppins, sans-serif;
     font-weight: 500;
-    background-color: #131313;
+    background-color: var(--black-2);
 }
 
 @import "header";
 @import "texts";
 @import "animation";
 @import "utilities";
-
+@import "aboutus";
