@@ -370,6 +370,7 @@ body {
   background-attachment: fixed;
   position: relative;
   display: flex;
+  align-items: center;
   min-height: 110rem;
 }
 .about-us::before {
@@ -389,14 +390,13 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 3rem;
-  width: 100%;
+  padding: 0 1rem;
+  width: 50%;
 }
 .about-us-box-1 .img-1 {
   width: 40rem;
 }
 .about-us-box-1 .card-container {
-  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -405,20 +405,16 @@ body {
   margin-left: 4rem;
 }
 .about-us-box-1 .three-cards {
-  position: absolute;
-  bottom: -8%;
   display: flex;
   justify-content: center;
-  width: 100%;
-  flex: 1;
+  margin-top: -24rem;
 }
 .about-us-box-1 .img-2, .about-us-box-1 .img-3, .about-us-box-1 .img-4 {
-  max-width: 23%;
+  max-width: 20rem;
 }
 .about-us-box-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 50%;
+  padding-right: 4rem;
 }
 .about-us-lists {
   list-style: none;
@@ -436,4 +432,8 @@ body {
 .testtt {
   background-color: inherit;
   height: 150rem;
+}
+
+.content-container {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
