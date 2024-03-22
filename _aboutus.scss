@@ -5,6 +5,7 @@
     background-attachment: fixed;
     position: relative;
     display: flex;
+    min-height: 110rem;
     
 
     &::before { //*for about us background
@@ -19,15 +20,17 @@
     }
 
     &-box-1, &-box-2 {
-        z-index: 999;
-    padding: 3rem 1.5rem;
+    z-index: 999;
 
     }
 
     &-box-1 {
-       flex: 0 0 50%;
-      
-       
+    //    flex: 0 0 50%;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       padding: 0 3rem;
+       width: 100%;
 
         .img-1 {
             width: 40rem;
@@ -48,11 +51,16 @@
 
        .three-cards {
         position: absolute;
-        bottom: 0;
+        bottom: -8%; 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex: 1;
+        
        }
 
         .img-2, .img-3, .img-4 {
-            width: 20rem;
+            max-width: 23%;
             
         }
     }
@@ -64,11 +72,27 @@
        
     
     }
+
+    &-lists {
+        list-style: none;  
+        
+        li {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: var(--font-md-1);
+        }
+
+    }
 }
 
 //temporary div
 .testtt {
-    background-color: red;
+    background-color: inherit;
     height: 150rem;
 
 }

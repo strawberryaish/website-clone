@@ -47,6 +47,7 @@
   --font-md-1: 3.5rem;
   --font-md-2: 2.5rem;
   --font-md-3: 2rem;
+  --font-md-5: 3rem;
   --font-default-1: 1.8rem;
   --font-default-2: 1.6rem;
   --font-sm: 1.4rem;
@@ -80,6 +81,7 @@ body {
   --font-md-2: 2.5rem;
   --font-md-3: 2.2rem;
   --font-md-4: 2rem;
+  --font-md-5: 3rem;
   --font-default-1: 1.8rem;
   --font-default-2: 1.6rem;
   --font-sm-1: 1.4rem;
@@ -368,6 +370,7 @@ body {
   background-attachment: fixed;
   position: relative;
   display: flex;
+  min-height: 110rem;
 }
 .about-us::before {
   content: "";
@@ -381,10 +384,13 @@ body {
 }
 .about-us-box-1, .about-us-box-2 {
   z-index: 999;
-  padding: 3rem 1.5rem;
 }
 .about-us-box-1 {
-  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 3rem;
+  width: 100%;
 }
 .about-us-box-1 .img-1 {
   width: 40rem;
@@ -400,18 +406,34 @@ body {
 }
 .about-us-box-1 .three-cards {
   position: absolute;
-  bottom: 0;
+  bottom: -8%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
 }
 .about-us-box-1 .img-2, .about-us-box-1 .img-3, .about-us-box-1 .img-4 {
-  width: 20rem;
+  max-width: 23%;
 }
 .about-us-box-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.about-us-lists {
+  list-style: none;
+}
+.about-us-lists li {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.about-us-lists .icon {
+  font-size: var(--font-md-1);
+}
 
 .testtt {
-  background-color: red;
+  background-color: inherit;
   height: 150rem;
 }/*# sourceMappingURL=style.css.map */
