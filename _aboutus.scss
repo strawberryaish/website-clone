@@ -1,12 +1,13 @@
 .about-us {
-    height: 150rem; //temporary
     background-image:  url(images/fire-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    display: flex;
+    
 
-    &::before { 
+    &::before { //*for about us background
         content: "";
         position: absolute;
         top: 0;
@@ -15,6 +16,53 @@
         height: 100%;
         background-image: linear-gradient(180deg, var(--black-2) 0%, #00000054 100%);
         z-index: 1;
+    }
+
+    &-box-1, &-box-2 {
+        z-index: 999;
+    padding: 3rem 1.5rem;
+
+    }
+
+    &-box-1 {
+       flex: 0 0 50%;
+      
+       
+
+        .img-1 {
+            width: 40rem;
+           
+        }
+
+        .card-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img:not(:first-child)
+        {
+            margin-left: 4rem;
+        }
+
+       .three-cards {
+        position: absolute;
+        bottom: 0;
+       }
+
+        .img-2, .img-3, .img-4 {
+            width: 20rem;
+            
+        }
+    }
+
+    &-box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+       
+    
     }
 }
 

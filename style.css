@@ -71,6 +71,7 @@ body {
   --orange: #ef9700;
   --white: #fff;
   --black: #1d1d1d;
+  --sm-transparent: #ffffff39;
   --font-xxl-1: 17rem;
   --font-xxl-2: 15rem;
   --font-xl: 12rem;
@@ -259,8 +260,12 @@ body {
   z-index: 999;
 }
 
-.primary-title {
+.primary-title, .text-outline {
+  text-transform: uppercase;
   font-family: Waruna, sans-serif;
+}
+
+.primary-title {
   font-size: var(--font-xxl-1);
   font-weight: 500;
   background-image: var(--bg-img-2);
@@ -271,10 +276,36 @@ body {
 .primary-title-address {
   font-size: var(--font-md-2) !important;
 }
+.primary-title-md {
+  font-size: var(--font-lg);
+}
+.primary-title-sm {
+  font-size: var(--font-md-1);
+}
+
+.primary-container {
+  position: relative;
+}
+.primary-container-contents {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.text-outline {
+  font-size: var(--font-xl);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--sm-transparent);
+  font-weight: 500;
+}
+
+.section-description {
+  color: var(--white);
+  font-size: var(--font-default-1);
+  line-height: 1.5;
+}
 
 .primary-content {
   font-size: var(--font-md-3);
-  text-transform: uppercase;
   letter-spacing: 2px;
   width: 80%;
   font-weight: 600;
@@ -306,6 +337,10 @@ body {
   margin-bottom: 4rem;
 }
 
+.u-margin-bt-xs {
+  margin-bottom: 1rem;
+}
+
 .u-margin-bt-sm {
   margin-bottom: 1.5rem;
 }
@@ -327,12 +362,12 @@ body {
 }
 
 .about-us {
-  height: 150rem;
   background-image: url(images/fire-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  display: flex;
 }
 .about-us::before {
   content: "";
@@ -343,6 +378,37 @@ body {
   height: 100%;
   background-image: linear-gradient(180deg, var(--black-2) 0%, rgba(0, 0, 0, 0.3294117647) 100%);
   z-index: 1;
+}
+.about-us-box-1, .about-us-box-2 {
+  z-index: 999;
+  padding: 3rem 1.5rem;
+}
+.about-us-box-1 {
+  flex: 0 0 50%;
+}
+.about-us-box-1 .img-1 {
+  width: 40rem;
+}
+.about-us-box-1 .card-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us-box-1 img:not(:first-child) {
+  margin-left: 4rem;
+}
+.about-us-box-1 .three-cards {
+  position: absolute;
+  bottom: 0;
+}
+.about-us-box-1 .img-2, .about-us-box-1 .img-3, .about-us-box-1 .img-4 {
+  width: 20rem;
+}
+.about-us-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testtt {

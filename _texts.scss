@@ -1,7 +1,14 @@
 ////////////////////////////////
 /// TEXTS
-.primary-title {
+/// 
+
+.primary-title, .text-outline {
+    text-transform: uppercase;
     font-family: Waruna, sans-serif;
+}
+
+
+.primary-title {
     font-size: var(--font-xxl-1);
     font-weight: 500;
     background-image: var(--bg-img-2);
@@ -11,14 +18,47 @@
     &-address {
         font-size: var(--font-md-2)!important;
     }
+
+    &-md {
+        font-size: var(--font-lg);
+    
+    }
+
+    &-sm {
+        font-size: var(--font-md-1);
+    }
     
 }
 
+//* FOR THE SECTIONS TITLE
+.primary-container {
+    position: relative;
+
+    &-contents {
+        position: absolute;
+        bottom: 2rem;
+    }
+}
+
+.text-outline {
+ 
+    font-size: var(--font-xl);
+    color: transparent;
+    -webkit-text-stroke: 1px var(--sm-transparent);
+    font-weight: 500;
+}
+
+//* FOR THE SECTIONS DESCRIPTION
+.section-description {
+    color: var(--white);
+    font-size: var(--font-default-1);
+    line-height: 1.5;
+}
+
+
 .primary-content {
     font-size: var(--font-md-3);
-    text-transform: uppercase;
     letter-spacing: 2px;
-    
     width: 80%;
     font-weight: 600;
     color: var(--white);
