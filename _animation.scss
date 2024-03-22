@@ -13,3 +13,19 @@
         transform: translateY(0);
     }
 }
+
+@keyframes cards {
+    0% {
+        transform: rotate(0) skew(0, 10deg);
+        
+    }
+
+    50% {
+        transform: rotateZ(30deg) skew(0, -20deg);
+
+    }
+
+    100% {
+        transform: rotate(0) skew(0, 10deg);
+    }
+}

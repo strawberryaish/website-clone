@@ -231,15 +231,18 @@ body {
 .hero .card-1 {
   height: 20rem;
   top: 0;
+  animation: cards 3s infinite;
 }
 .hero .card-2 {
   height: 15rem;
   bottom: 0;
   left: 40%;
+  animation: cards 3s infinite;
 }
 .hero .card-3 {
   height: 10rem;
   top: 0;
+  animation: cards 3s infinite;
 }
 
 .contact-box {
@@ -331,6 +334,17 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes cards {
+  0% {
+    transform: rotate(0) skew(0, 10deg);
+  }
+  50% {
+    transform: rotateZ(30deg) skew(0, -20deg);
+  }
+  100% {
+    transform: rotate(0) skew(0, 10deg);
+  }
+}
 .u-margin-bt-big {
   margin-bottom: 8rem;
 }
@@ -391,15 +405,38 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 0 1rem;
-  width: 50%;
+  width: 55%;
 }
 .about-us-box-1 .img-1 {
   width: 40rem;
+  transition: all 0.2s;
+}
+.about-us-box-1 .img-1:hover {
+  transform: scale(1.1);
+}
+.about-us-box-1 .img-2 {
+  transition: all 0.2s;
+}
+.about-us-box-1 .img-2:hover {
+  transform: rotate(-0.04turn);
+}
+.about-us-box-1 .img-3 {
+  transition: all 0.2s;
+}
+.about-us-box-1 .img-3:hover {
+  transform: scale(1.1);
+}
+.about-us-box-1 .img-4 {
+  transition: all 0.2s;
+}
+.about-us-box-1 .img-4:hover {
+  transform: rotate(0.04turn);
 }
 .about-us-box-1 .card-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  animation: upDown 2.5s infinite;
 }
 .about-us-box-1 img:not(:first-child) {
   margin-left: 4rem;
@@ -408,6 +445,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: -24rem;
+  z-index: 2;
 }
 .about-us-box-1 .img-2, .about-us-box-1 .img-3, .about-us-box-1 .img-4 {
   max-width: 20rem;

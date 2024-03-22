@@ -213,24 +213,31 @@ margin-bottom: 4rem;
 
     .card-1, .card-2, .card-3 {
         position: absolute;
+        
 
     }
+
+   
 
     .card-1 {
         height: 20rem;
         top: 0;
+        animation: cards 3s infinite;
+        
     }
 
     .card-2 {
         height: 15rem;
         bottom: 0;
         left: 40%;
+        animation: cards 3s infinite;
 
     }
 
     .card-3 {
         height: 10rem;
         top: 0;
+        animation: cards 3s infinite;
     }
 
 

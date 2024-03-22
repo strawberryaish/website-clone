@@ -32,18 +32,51 @@
        
        flex-direction: column;
        padding: 0 1rem;
-       width: 50%;
+       width: 55%;
+      
 
         .img-1 {
             width: 40rem;
+            transition: all 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+                
+            }
            
+        }
+
+        .img-2 {
+        transition: all 0.2s;
+            &:hover {
+                transform: rotate(-0.04turn);
+                
+            }
+        }
+
+        .img-3 {
+            transition: all 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+                
+            }
+           
+        }
+
+        .img-4 {
+            transition: all 0.2s;
+            &:hover {
+                transform: rotate(0.04turn);
+                
+            }
         }
 
         .card-container {
             display: flex;
             align-items: center;
             flex-direction: column;
-            
+            animation: upDown 2.5s infinite;
         }
 
         img:not(:first-child)
@@ -52,10 +85,10 @@
         }
 
        .three-cards {
-       
         display: flex;
         justify-content: center;
         margin-top: -24rem;
+        z-index: 2;
   
         
        }
