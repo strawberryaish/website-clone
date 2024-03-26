@@ -1,0 +1,28 @@
+.button-container {
+    width: 18%;
+}
+
+.btn {
+    background: var(--bg-img);
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: var(--font-default-2);
+    padding: 1.5rem;
+    cursor: pointer;
+
+    &-portal {
+        width: 80%;
+
+    }
+
+    &-playnow {
+        width: 30%;
+    }
+
+    &-lore {
+        width: 40%;
+    }
+}

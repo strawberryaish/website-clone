@@ -1,4 +1,10 @@
-
+@import "header";
+@import "texts";
+@import "animation";
+@import "utilities";
+@import "aboutus";
+@import "lore";
+@import "buttons";
 
 @font-face {
     font-family: Poppins;
@@ -51,6 +57,7 @@
     --white: #fff;
     --black: #1d1d1d;
     --black-2: #131313;
+    --sm-transparent: #ffffff39;
 
     //*FONT SIZES
     --font-xxl-1: 17rem;
@@ -86,8 +93,3 @@ body {
     background-color: var(--black-2);
 }
 
-@import "header";
-@import "texts";
-@import "animation";
-@import "utilities";
-@import "aboutus";
