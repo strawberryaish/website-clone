@@ -4,6 +4,7 @@
 
 .btn {
     background: var(--bg-img);
+    background-size: 200% auto;
     border: none;
     font-family: inherit;
     text-transform: uppercase;
@@ -12,6 +13,13 @@
     font-size: var(--font-default-2);
     padding: 1.5rem;
     cursor: pointer;
+    transition: all 0.3s;
+
+
+    &:hover {
+        background: var(--bg-img-3);
+        background-size: 300% auto;
+    }
 
     &-portal {
         width: 80%;

@@ -402,6 +402,7 @@
 
 .btn {
   background: var(--bg-img);
+  background-size: 200% auto;
   border: none;
   font-family: inherit;
   text-transform: uppercase;
@@ -410,6 +411,11 @@
   font-size: var(--font-default-2);
   padding: 1.5rem;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: var(--bg-img-3);
+  background-size: 300% auto;
 }
 .btn-portal {
   width: 80%;
@@ -478,6 +484,7 @@
   --font-sm-2: 1.2rem;
   --bg-img: linear-gradient(180deg, var(--primary-color) 20%, var(--secondary-color) 100%);
   --bg-img-2: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  --bg-img-3: linear-gradient(20deg, var(--primary-color) 20%, var(--secondary-color) 100%);
 }
 
 html {
