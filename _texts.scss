@@ -43,6 +43,15 @@
         position: absolute;
         top: 5rem;
     }
+
+    &-tokenomics {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+       
+    }
 }
 
 .text-outline {

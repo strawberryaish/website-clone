@@ -1,3 +1,13 @@
+@mixin addOL {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.277));
+}
+
 .u-margin-bt-big {
     margin-bottom: 8rem;
 }

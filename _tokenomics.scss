@@ -1,0 +1,45 @@
+.tokenomics {
+    &::before {
+        @include addOL;
+    }
+
+    background-image: url(images/bg2-min.png);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    padding: 2rem;
+    
+  
+ 
+
+    &-box1 {
+        flex: 0 0 40%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 75%;
+        }
+    }
+
+    &-box2 {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .primary-container {
+            width: 100%;
+            text-align: center;
+           
+        }
+        
+        .section-description {
+            font-weight: 800;
+        }
+
+    }
+}
+

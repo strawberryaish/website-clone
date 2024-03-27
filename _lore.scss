@@ -1,5 +1,11 @@
 
 .lore {
+
+    &::before {
+        @include addOL;
+     
+         }
+
     background: url(images/bg1.png);
     position: relative;
     background-position: 80%;
@@ -25,16 +31,7 @@
         animation: upDown 2s infinite;
     }
     }
-}
 
-.lore::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.277));
 
 }
 

@@ -187,6 +187,12 @@
   position: absolute;
   top: 5rem;
 }
+.primary-container-tokenomics {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .text-outline {
   font-size: var(--font-xl);
@@ -374,6 +380,15 @@
   padding: 2rem;
   height: 100rem;
 }
+.lore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.277));
+}
 .lore-box1 {
   flex: 0 0 45%;
   z-index: 2;
@@ -384,16 +399,6 @@
 .lore-box2 img {
   width: 95%;
   animation: upDown 2s infinite;
-}
-
-.lore::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.277));
 }
 
 .button-container {
@@ -425,6 +430,44 @@
 }
 .btn-lore {
   width: 40%;
+}
+
+.tokenomics {
+  background-image: url(images/bg2-min.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 2rem;
+}
+.tokenomics::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.277));
+}
+.tokenomics-box1 {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+}
+.tokenomics-box1 img {
+  width: 75%;
+}
+.tokenomics-box2 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tokenomics-box2 .primary-container {
+  width: 100%;
+  text-align: center;
+}
+.tokenomics-box2 .section-description {
+  font-weight: 800;
 }
 
 @font-face {
