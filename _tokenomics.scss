@@ -6,6 +6,7 @@
     background-image: url(images/bg2-min.png);
     background-position: center;
     background-size: cover;
+    height: 93rem;
 
     display: flex;
     padding: 2rem;
@@ -14,21 +15,25 @@
  
 
     &-box1 {
-        flex: 0 0 40%;
+        flex: 0 0 35%;
         display: flex;
         justify-content: center;
 
         img {
-            width: 75%;
+            width: 80%;
+            object-fit: contain;
+            
         }
     }
 
     &-box2 {
-        flex-grow: 1;
+        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         
+        
+       
 
         .primary-container {
             width: 100%;
@@ -43,3 +48,36 @@
     }
 }
 
+.progress-container {
+    display: flex;
+    // flex-wrap: nowrap;
+    gap: 3rem;
+    width: 100%;
+    flex: 1;
+
+
+    .individual-progress {
+        display: flex;
+        flex-direction: column;
+        
+        .text-flex {
+            display: flex;
+
+            .percent {
+            margin-left: auto;
+
+            }
+        }
+    }
+
+    .progress-bar {
+        background-color: var(--white);
+        width: 2.5rem;
+        height: 2.5rem;
+        width: 100%;
+    }
+
+    &-box2, &-box1 {
+        width: 100%;
+    }
+}
