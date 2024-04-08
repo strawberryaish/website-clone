@@ -14,6 +14,22 @@
     }
 }
 
+@keyframes upDown2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 @keyframes cards {
     0% {
         transform: rotate(0) skew(0, 10deg);

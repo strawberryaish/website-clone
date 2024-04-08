@@ -222,9 +222,26 @@
 }
 
 .secondary-title {
-  font-size: var(--font-md-4);
+  font-size: var(--font-md-3);
   color: var(--white);
   text-transform: uppercase;
+  font-weight: 700;
+}
+
+.percent {
+  font-size: var(--font-md-2) !important;
+  font-weight: 800;
+}
+
+.italic-text {
+  color: var(--white);
+  font-size: var(--font-default-2);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.total-amount {
+  font-size: var(--font-md-4);
 }
 
 @keyframes upDown {
@@ -233,6 +250,17 @@
   }
   50% {
     transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes upDown2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
@@ -393,7 +421,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.277));
+  background: linear-gradient(rgba(0, 0, 0, 0.595), rgba(0, 0, 0, 0.277));
 }
 .lore-box1 {
   flex: 0 0 45%;
@@ -442,9 +470,9 @@
   background-image: url(images/bg2-min.png);
   background-position: center;
   background-size: cover;
-  height: 93rem;
   display: flex;
-  padding: 2rem;
+  padding: 10rem;
+  justify-content: center;
 }
 .tokenomics::before {
   content: "";
@@ -453,23 +481,23 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.277));
+  background: linear-gradient(rgba(0, 0, 0, 0.595), rgba(0, 0, 0, 0.277));
 }
-.tokenomics-box1 {
-  flex: 0 0 35%;
-  display: flex;
-  justify-content: center;
-}
-.tokenomics-box1 img {
-  width: 80%;
+.tokenomics img {
+  width: 120%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-left: -10%;
+  animation: upDown2 2.5s ease infinite;
 }
 .tokenomics-box2 {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  z-index: -9999 !important;
+  flex: 0 0 70%;
 }
 .tokenomics-box2 .primary-container {
   width: 100%;
@@ -488,9 +516,12 @@
 .progress-container .individual-progress {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
 }
 .progress-container .individual-progress .text-flex {
   display: flex;
+  align-items: center;
 }
 .progress-container .individual-progress .text-flex .percent {
   margin-left: auto;
@@ -500,6 +531,36 @@
   width: 2.5rem;
   height: 2.5rem;
   width: 100%;
+}
+.progress-container .progress-bar-100, .progress-container .progress-bar-45, .progress-container .progress-bar-15, .progress-container .progress-bar-10, .progress-container .progress-bar-7, .progress-container .progress-bar-3, .progress-container .progress-bar-2, .progress-container .progress-bar-1 {
+  background-color: var(--primary-color);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.progress-container .progress-bar-100 {
+  background-color: var(--orange);
+  width: 100%;
+}
+.progress-container .progress-bar-45 {
+  width: 45%;
+}
+.progress-container .progress-bar-15 {
+  width: 15%;
+}
+.progress-container .progress-bar-10 {
+  width: 10%;
+}
+.progress-container .progress-bar-7 {
+  width: 7%;
+}
+.progress-container .progress-bar-3 {
+  width: 3%;
+}
+.progress-container .progress-bar-2 {
+  width: 2%;
+}
+.progress-container .progress-bar-1 {
+  width: 1%;
 }
 .progress-container-box2, .progress-container-box1 {
   width: 100%;
