@@ -277,6 +277,14 @@
     transform: rotate(0) skew(0, 10deg);
   }
 }
+@keyframes stripes-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
 .u-margin-bt-big {
   margin-bottom: 8rem;
 }
@@ -466,6 +474,10 @@
   width: 40%;
 }
 
+.progress-bar > span:after {
+  animation: stripes-move 2s linear infinite;
+}
+
 .tokenomics {
   background-image: url(images/bg2-min.png);
   background-position: center;
@@ -531,6 +543,28 @@
   width: 2.5rem;
   height: 2.5rem;
   width: 100%;
+}
+.progress-container .progress-bar > span {
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: 500ms linear;
+  -webkit-transition: 500ms linear;
+}
+.progress-container .progress-bar > span:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  background-size: 50px 50px;
+  overflow: hidden;
+  animation: stripes-move 1s linear infinite;
+  -webkit-animation: stripes-move 1s linear infinite;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
 }
 .progress-container .progress-bar-100, .progress-container .progress-bar-45, .progress-container .progress-bar-15, .progress-container .progress-bar-10, .progress-container .progress-bar-7, .progress-container .progress-bar-3, .progress-container .progress-bar-2, .progress-container .progress-bar-1 {
   background-color: var(--primary-color);

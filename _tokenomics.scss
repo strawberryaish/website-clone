@@ -1,3 +1,10 @@
+
+
+.progress-bar > span:after {
+    -webkit-animation: stripes-move 2s linear infinite;
+    animation        : stripes-move 2s linear infinite;
+}
+
 .tokenomics {
     &::before {
         @include addOL;
@@ -21,6 +28,8 @@
             animation: upDown2 2.5s ease infinite;
             
         }
+
+
  
 
     // &-box1 {
@@ -90,6 +99,32 @@
         width: 2.5rem;
         height: 2.5rem;
         width: 100%;
+
+        & > span {
+            height            : 100%;
+            display           : block;
+            overflow          : hidden;
+            position          : relative;
+            transition        : 500ms linear;
+            -webkit-transition: 500ms linear;
+        }
+
+        & > span:after {
+            content          : "";
+            top              : 0;
+            left             : 0;
+            right            : 0;
+            bottom           : 0;
+            z-index          : 1;
+            position         : absolute;
+            background-size  : 50px 50px;
+            overflow         : hidden;
+            animation        : stripes-move 1s linear infinite;
+            -webkit-animation: stripes-move 1s linear infinite;
+            background-image : -webkit-linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+            background-image : linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+        }
+
 
         &-100, &-45, &-15, &-10, &-7, &-3, &-2, &-1 {
             background-color: var(--primary-color);
