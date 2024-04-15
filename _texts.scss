@@ -44,7 +44,7 @@
         top: 5rem;
     }
 
-    &-tokenomics {
+    &-tokenomics, &-types {
         position: absolute;
         top: 60%;
         left: 50%;
@@ -52,6 +52,8 @@
 
        
     }
+
+    
 }
 
 .text-outline {
@@ -110,4 +112,14 @@
 
 .total-amount {
     font-size: var(--font-md-4);
+}
+
+//* GAME TYPES
+
+.types-title {
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: var(--font-md-2);
+    font-family: Waruna, sans-serif;
+    
 }

@@ -187,7 +187,7 @@
   position: absolute;
   top: 5rem;
 }
-.primary-container-tokenomics {
+.primary-container-tokenomics, .primary-container-types {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -242,6 +242,13 @@
 
 .total-amount {
   font-size: var(--font-md-4);
+}
+
+.types-title {
+  color: var(--orange);
+  text-transform: uppercase;
+  font-size: var(--font-md-2);
+  font-family: Waruna, sans-serif;
 }
 
 @keyframes upDown {
@@ -610,6 +617,45 @@
   background-position: center;
   background-attachment: fixed;
 }
+.types .primary-container {
+  text-align: center;
+}
+.types-big {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.types-inner {
+  background-color: var(--sm-transparent-2);
+  border: 1px solid var(--orange);
+  width: 39rem;
+  z-index: 99999;
+  padding: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  position: relative;
+}
+.types-inner-box {
+  margin-top: 3.5rem;
+}
+.types-icon {
+  font-size: 4rem;
+  color: var(--black);
+  background-color: var(--orange);
+  padding: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.types-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .types::before {
   content: "";
@@ -664,6 +710,7 @@
   --black: #1d1d1d;
   --black-2: #131313;
   --sm-transparent: #ffffff39;
+  --sm-transparent-2: #1d1d1da7;
   --font-xxl-1: 17rem;
   --font-xxl-2: 15rem;
   --font-xl: 12rem;
