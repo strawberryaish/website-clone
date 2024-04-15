@@ -1,15 +1,20 @@
 .types {
 
-    
-    height: 80rem;
+    padding: 2rem 5rem;
+    height: 60rem;
     position: relative;
     background-image: url(images/bg1.jpg);
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     .primary-container {
         text-align: center;
+        
     }
 
     &-big {
@@ -42,10 +47,12 @@
     }
 
     &-icon {
-       font-size: 4rem;
+       font-size: 5rem;
        color: var(--black);
        background-color: var(--orange);
        padding: 2.5rem;
+       width: 11rem;
+       
        position: absolute;
        top: 0;
        left: 50%;

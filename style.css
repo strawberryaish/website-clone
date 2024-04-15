@@ -249,6 +249,8 @@
   text-transform: uppercase;
   font-size: var(--font-md-2);
   font-family: Waruna, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 @keyframes upDown {
@@ -610,12 +612,16 @@
 }
 
 .types {
-  height: 80rem;
+  padding: 2rem 5rem;
+  height: 60rem;
   position: relative;
   background-image: url(images/bg1.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .types .primary-container {
   text-align: center;
@@ -641,10 +647,11 @@
   margin-top: 3.5rem;
 }
 .types-icon {
-  font-size: 4rem;
+  font-size: 5rem;
   color: var(--black);
   background-color: var(--orange);
   padding: 2.5rem;
+  width: 11rem;
   position: absolute;
   top: 0;
   left: 50%;
@@ -710,7 +717,7 @@
   --black: #1d1d1d;
   --black-2: #131313;
   --sm-transparent: #ffffff39;
-  --sm-transparent-2: #1d1d1da7;
+  --sm-transparent-2: #1d1d1dbd;
   --font-xxl-1: 17rem;
   --font-xxl-2: 15rem;
   --font-xl: 12rem;
